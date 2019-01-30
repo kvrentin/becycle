@@ -22,13 +22,7 @@
 						</button>
 				</div>
 				<ul class="menu">
-						<li class="dropdown"><a href="<?php echo $route['about']; ?>">a propos</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Qui sommes-nous ?</a></li>
-								<li><a href="#">Partenaires</a></li>
-								<li><a href="#">Nous rejoindre</a></li>
-							</ul>
-						</li>
+						<li><a href="<?php echo $route['about']; ?>">a propos</a></li>
 						<li class="dropdown"><a href="<?php echo $route['velo']; ?>">mon velo et moi</a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Rouler en sécurité</a></li>

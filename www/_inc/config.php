@@ -6,5 +6,5 @@ if(!isset($title)){
 	$title = "BeCycle";
 }
 if(!isset($description)) {
-	$description = "Description du site";
+	$description = "Description du site par défaut";
 }

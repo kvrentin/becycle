@@ -1,10 +1,18 @@
 @import (inline) '../../node_modules/corenav/coreNavigation.css';
 
-
 body {
   margin: 0;
 }
-
+*{font-family: Helvetica;}
+h2{
+  font-size: 48px;
+  color:#3a3a3a;
+}
+h3{
+  font-size: 24px;
+  font-weight: 500;
+  color:#999;
+}
 #parallax-container {
   height: 85vh;
   div {
@@ -18,7 +26,6 @@ body {
       font-size: 140px;
       text-align: center;
       margin-top:380px;
-      font-family: Helvetica;
       color:#000;
     }
   }
@@ -50,9 +57,7 @@ body {
     padding: 20px;
   }
   h2{
-    font-size: 2.4em;
-    text-transform: uppercase;
-    font-family: Helvetica;
+    color:#fff;
   }
 }
 .dl{
@@ -63,17 +68,16 @@ body {
 }
 #dl-phone{
   margin:0;
-  height: 200px;
+  height: 240px;
   overflow: hidden;
 
 }
 footer{
   position: relative;
   padding: 15px;
-  background-color: #2a2a2a;
+  background-color: #3a3a3a;
   color:#fff;
   text-align: center;
-  font-family: Helvetica;
   img{
     width: 160px;
     padding: 10px;
@@ -164,23 +168,43 @@ nav .menu li a:hover {
 
 
 
+#about{
+  padding: 20px;
+  margin-top: 100px;
+
+  div{
+    p{
+      font-size: 20px;
+      color:#2a2a2a;
+    &:nth-of-type(2){
+      font-size:18px;
+      color: #3a3a3a;
+    }
+  }
+  }
+}
+#startup{
+  width:1120px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-column-gap: 25px;
+  overflow: hidden;
+  margin-bottom: 100px;
+
+}
+.border{
+  width: 90px;
+  height: 1px;
+  border: 2px solid #5a0586;
+}
+
 #content_form{
   display: grid;
   grid-template-columns: 50% auto;
   justify-items:center;
   padding:60px 25px 0 0;
   height: 800px;
-  h2{
-    font-size: 48px;
-    font-family: Helvetica;
-    color:#3a3a3a;
-  }
-  h3{
-    font-size: 24px;
-    font-family: Helvetica;
-    font-weight: 500;
-    color:#999;
-  }
   ul li{
       display: inline;
       a{
@@ -190,7 +214,6 @@ nav .menu li a:hover {
     }
   p, a{
     font-size: 24px;
-    font-family: Helvetica;
     color: #3a3a3a;
     line-height: 1.93;
     text-decoration: none;
