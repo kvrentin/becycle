@@ -3,7 +3,9 @@
 body {
   margin: 0;
 }
-*{font-family: Helvetica;}
+*{font-family: Helvetica;
+//cursor:url(img/cursor.png),auto !important;
+}
 h2{
   font-size: 48px;
   color:#3a3a3a;
@@ -102,6 +104,7 @@ footer{
   }
 }
 
+.core-nav .wrap-core-nav-list .core-nav-list, .core-nav .wrap-core-nav-list .attributes{margin: 8px 0 -1px 0;}
 
 nav {
     min-height: 60px;
@@ -116,7 +119,7 @@ nav .nav-header {
 nav .brand {
     display: block;
     position: relative;
-    width: 170px;
+    width: 100px;
     top: 20px;
 }
 
@@ -132,8 +135,9 @@ nav .menu li a {
 }
 
 nav .menu li a:hover {
-    color: #e74c3c;
+    color: #5a0586;
 }
+
 
 @media (max-width: 992px) {
     nav .full-container,
@@ -184,20 +188,42 @@ nav .menu li a:hover {
   }
 }
 #startup{
-  width:1120px;
-  margin: auto;
   display: grid;
   grid-template-columns: 60% auto;
   grid-column-gap: 25px;
   overflow: hidden;
-  margin-bottom: 100px;
-
+  align-items: center;
 }
 .border{
   width: 90px;
   height: 1px;
   border: 2px solid #5a0586;
 }
+.abt{
+  margin-bottom: 100px;
+  width:1120px;
+  margin:0 auto 200px;
+  line-height: 1.5;
+}
+#team{
+  width:60%;
+}
+
+#join{
+  h2{
+    text-align: right;
+  }
+  .border{
+    float: right;
+  }
+}
+
+#partner{
+  h2{
+    text-align: center;
+  }
+}
+
 
 #content_form{
   display: grid;
