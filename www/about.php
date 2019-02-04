@@ -3,7 +3,7 @@ $current = "about";
 $title = "A propos";
 $description = "Page de ".$title." de becycle";
 ?>
-<?php include_once('_inc/header.php')  ?>
+<?php include_once('_inc/header.php');  ?>
 <div id="about">
   <div class="abt" id="startup">
     <div>

@@ -25,15 +25,15 @@
 						<li><a href="<?php echo $route['about']; ?>">a propos</a></li>
 						<li class="dropdown"><a href="<?php echo $route['velo']; ?>">mon velo et moi</a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Rouler en sécurité</a></li>
-								<li><a href="#">Bien choisir son vélo</a></li>
+								<li><a href="<?php echo $route['securite']; ?>">Rouler en sécurité</a></li>
+								<li><a href="<?php echo $route['choix']; ?>">Bien choisir son vélo</a></li>
 							</ul>
 						</li>
 						<li class="dropdown"><a href="<?php echo $route['actu']; ?>">actualité</a>
 							<ul class="dropdown-menu">
-								<li><a href="#">En france</a></li>
-								<li><a href="#">Dans le monde</a></li>
-								<li><a href="#">Derniers décrets</a></li>
+								<li><a href="<?php echo $route['france']; ?>">En france</a></li>
+								<li><a href="<?php echo $route['monde']; ?>">Dans le monde</a></li>
+								<li><a href="<?php echo $route['decret']; ?>">Derniers décrets</a></li>
 							</ul>
 						</li>
 						<li><a href="<?php echo $route['contact']; ?>">contact</a></li>

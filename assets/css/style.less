@@ -1,7 +1,15 @@
 @import (inline) '../../node_modules/corenav/coreNavigation.css';
 
+@green : #2f9e41;
+@glight:#66d06e;
+@gdark:#006e13;
+@violet : #5a0586;
+@vlight:#8b3db7;
+@vdark: #290058;
+
 body {
   margin: 0;
+  background-color: #f4f7f6;
 }
 *{font-family: Helvetica;
 //cursor:url(img/cursor.png),auto !important;
@@ -20,22 +28,24 @@ h3{
   div {
     position: fixed;
     top: 0;
-    background-position: center bottom !important;
+    background-image: url(img/1.jpg);
+    background-position: center center;
+    background-size: cover;
     transform: translateY(0px);
     height: 100%;
     width: 100%;
     h1{
       font-size: 140px;
       text-align: center;
-      margin-top:380px;
-      color:#000;
+      margin-top:300px;
+      color:@vdark;
     }
   }
 }
 
 #content {
   position: relative;
-  background-color: #2f9e41;
+  background-color: @green;
   color: #ffffff;
   padding: 50px;
   height: auto;
@@ -67,13 +77,18 @@ h3{
     background-color: #fff;
     text-align: center;
     position: relative;
+    img{width:180px;}
 }
 #dl-phone{
   margin:0;
   height: 240px;
   overflow: hidden;
+  img{
+    width: 400px;
+  }
 
 }
+// ------ FOOTER ---- ////
 footer{
   position: relative;
   padding: 15px;
@@ -93,7 +108,7 @@ footer{
       color: #fff;
       text-decoration: none;
       &:hover{
-        color:#8b3db7;
+        color:@vlight;
       }
     }
   }
@@ -104,78 +119,68 @@ footer{
   }
 }
 
+// ------ NAVIGATION ------- //
 .core-nav .wrap-core-nav-list .core-nav-list, .core-nav .wrap-core-nav-list .attributes{margin: 8px 0 -1px 0;}
-
+.core-nav .dropdown>.dropdown-menu{
+  border:none;
+  background:none;
+  li>a {border:none;}}
 nav {
     min-height: 60px;
-    background: #fff;
-}
 
-nav .wrap-core-nav-list,
-nav .nav-header {
-    background: #fff;
-}
-
-nav .brand {
-    display: block;
-    position: relative;
-    width: 100px;
-    top: 20px;
-}
-
-nav .brand img {
-    width: 100%;
-}
-
-nav .menu li a {
-    display: block;
-    padding: 20px 25px;
-    text-decoration: none;
-    color: #3a3a3a;
-}
-
-nav .menu li a:hover {
-    color: #5a0586;
+    .brand {
+        display: block;
+        position: relative;
+        width: 100px;
+        top: 20px;
+        img { width: 100%;}
+    }
+    .menu li a {
+        display: block;
+        padding: 20px 18px;
+        text-decoration: none;
+        color: #3a3a3a;
+        &:hover {color: @violet;}
+    }
 }
 
 
 @media (max-width: 992px) {
-    nav .full-container,
-    nav .nav-container {
+    .core-responsive-slide.open .core-nav .wrap-core-nav-list{background-color:#fff};
+    nav .full-container, nav .nav-container {
         padding-left: 0;
         padding-right: 0;
     }
     nav .nav-header {
         min-height: 60px;
-    }
-    nav .nav-header .brand {
-        margin: 0 auto 5px;
-        float: none;
-    }
-    nav .nav-header .toggle-bar {
-        font-size: 18px;
-        position: absolute;
-        top: 17px;
-        left: 15px;
-    }
-    nav .menu li a {
-        padding: 10px 10px;
-        border-bottom: solid 1px #efefef;
+        .brand {
+            margin: 0 auto 5px;
+            float: none;
+        }
+        .toggle-bar {
+            font-size: 18px;
+            position: absolute;
+            top: 17px;
+            left: 15px;
+        }
+        .menu li a {
+            padding: 10px 10px;
+            border-bottom: solid 1px #efefef;
+        }
     }
 }
+
 .fab{
-  color:#8b3db7;
+  color:@vlight;
   &:hover{
-    color:#5a0586;
+    color:@violet;
   }
 }
 
 
-
+// ----- ABOUT ----- //
 #about{
   padding: 20px;
-  margin-top: 100px;
-
   div{
     p{
       font-size: 20px;
@@ -197,12 +202,11 @@ nav .menu li a:hover {
 .border{
   width: 90px;
   height: 1px;
-  border: 2px solid #5a0586;
+  border: 2px solid @violet;
 }
 .abt{
-  margin-bottom: 100px;
   width:1120px;
-  margin:0 auto 200px;
+  margin:100px auto 200px;
   line-height: 1.5;
 }
 #team{
@@ -224,13 +228,15 @@ nav .menu li a:hover {
   }
 }
 
-
+// CONTACT //
 #content_form{
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 1fr 1fr;
   justify-items:center;
-  padding:60px 25px 0 0;
+  padding:60px 25px 0;
+  margin:0 auto 50px;
   height: 800px;
+  h2{margin-left: -20px;}
   ul li{
       display: inline;
       a{
@@ -245,10 +251,9 @@ nav .menu li a:hover {
     text-decoration: none;
   }
   a:hover{
-    color:#5a0586;
+    color:@violet;
   }
 }
-
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -261,9 +266,7 @@ nav .menu li a:hover {
   width:90%;
   padding: 25px;
   height:100%;
-
 }
-
 
 fieldset {
   border: medium none !important;
@@ -279,15 +282,9 @@ fieldset {
   width: 100%;
   border:none;
   border-bottom: 1px solid #ccc;
-  background: #FFF;
+  background: none;
   margin: 0 0 5px;
   padding: 10px;
-  &:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border-bottom: 1px solid #ccc;
-  }
 }
 
 #contact textarea {
@@ -300,24 +297,75 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #8b3db7;
+  background: @vlight;
   color: #FFF;
   margin: 25px 0 5px;
   padding: 10px;
   font-size: 18px;
-    &:hover {
-    background: #5a0586;
+  &:hover {
+    background: @violet;
     -webkit-transition: background 0.3s ease-in-out;
     -moz-transition: background 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
-}
-
-#contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  &:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
 }
 
 #contact input:focus, #contact textarea:focus {
     outline: none;
-    border-bottom: 1px solid #5a0586;
+    border-bottom: 1px solid @violet;
+}
+
+//  ------ DECRETS ------ //
+
+#news{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items:center;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  .img-actu{
+    width:100%;
+    overflow: hidden;
+    img{max-width: 100%;display: block;
+      &:hover{
+        transform: scale(1.1);
+        transition: transform .5s ease;
+      }
+    }
+  }
+    .info{
+      padding:15px;
+      background-color: #fff;
+      h3{color:#3a3a3a; margin:10px 0;}
+      .resume{color:#999; font-size: 14px;}
+      .suite{text-align: right;
+        a{text-decoration: none; color:@violet;}
+      }
+      .footer-info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color:#999;
+        p{margin-bottom: 5px;
+        &:nth-of-type(2){text-align: right;}}
+      }
+    }
+  }
+
+
+
+//  ------ FRANCE ------ //
+path:hover{fill: @vlight;}
+#stat{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items:center;
+  text-align: center;
+  span{
+    font: 600 64px Helvetica;
+    color:@violet;
+  }
+  p{color:#3a3a3a;font-size: 18px;}
 }

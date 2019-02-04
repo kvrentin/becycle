@@ -1,6 +1,7 @@
 //@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../../node_modules/corenav/coreNavigation.js
 //@prepros-prepend ../../node_modules/rellax/rellax.min.js
+//@prepros-prepend ../../node_modules/counterup2/dist/index.js
 
 window.addEventListener('load',function() {
 
@@ -19,6 +20,10 @@ window.addEventListener('load',function() {
       horizontal: false
     });
 
-    
+    $('.counter').counterUp({
+               delay: 10,
+               time: 1000
+           });
+
 
 })

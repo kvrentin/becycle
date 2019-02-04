@@ -3,8 +3,8 @@ $current = "contact";
 $title = "Contact";
 $description = "Page de ".$title." de becycle";
 ?>
-<?php include_once('_inc/header.php')  ?>
-<div id="content_form">
+<?php include_once('_inc/header.php');  ?>
+<div class="abt" id="content_form">
   <div>
     <h2>Contact</h2>
     <h3>Détails</h3>
