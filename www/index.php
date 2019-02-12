@@ -1,13 +1,12 @@
     <?php include_once('_inc/header.php')?>
       <div id="parallax-container">
-        <div><h1>BeCycle</h1></div>
+        <div>
+          <h1>BeCycle</h1>
+          <p>Textetxtetxt</p>
+          <p><a id="appstore" href="#"><img src="img/appstore.svg"></a><a href="#"><img src="img/playstore.png"></a></p>
 
-        <!--
-        <div style="background: url(img/1.jpg);"></div>
-        <div style="background: url(img/roue1.png);"></div>
-        <div style="background: url(img/roue2.png); "></div>
-        <div style="background: url(img/pedale.png);"></div>
-        <div style="background: url(img/velo.png);"></div>-->
+        </div>
+
       </div>
 
       <div id="content">
@@ -36,15 +35,13 @@
 
       <div class="dl">
         <h2>Téléchargez l'application</h2>
-        <p><a href="#"><img src="img/appstore.svg"></a><a href="#"><img src="img/playstore.png"></a></p>
+        <p><a id="appstore" href="#"><img src="img/appstore.svg"></a><a href="#"><img src="img/playstore.png"></a></p>
         <div id="dl-phone">
           <img src="img/mockup.png" >
         </div>
       </div>
 
       <?php include_once('_inc/footer.php')?>
-
-
 
 
 

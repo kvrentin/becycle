@@ -9,8 +9,8 @@ $description = "Page de ".$title." de becycle";
   <?php echo file_get_contents("img/france.svg"); ?>
   <div id="stat">
     <div>
-    <span class="counter">7600</span>
-    <p> vélos vendus/jour</p>
+      <span class="counter">7600</span>
+      <p> vélos vendus/jour</p>
     </div>
     <div>
       <span class="counter">1,278</span>
