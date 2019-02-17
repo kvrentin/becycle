@@ -9,13 +9,13 @@
 		<meta name="description" content="<?php echo $description; ?>">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-
 	</head>
 	<body>
 		<nav>
 				<div class="nav-header">
 					<a href="<?php echo $route['home']; ?>" class="brand">
-						<img src="img/logo.png" style="width:60px;">
+						<img class="logo-n" src="img/logo.png" style="width:60px;">
+						<img class="hidden logo-b" src="img/logob.png" style="width:60px;">
 					</a>
 						<button class="toggle-bar">
 								<span class="fa fa-bars"></span>
@@ -39,10 +39,9 @@
 						<li><a href="<?php echo $route['contact']; ?>">contact</a></li>
 				</ul>
 				<ul class="attributes">
-				<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-				<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-				<li><a href="#"><span class="fab fa-instagram"></span></a></li>
+					<li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+					<li><a href="#"><span class="fab fa-twitter"></span></a></li>
+					<li><a href="#"><span class="fab fa-instagram"></span></a></li>
 				</ul>
 		</nav>
-
 	<main>

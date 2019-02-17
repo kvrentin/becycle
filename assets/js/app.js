@@ -3,11 +3,10 @@
 //@prepros-prepend ../../node_modules/rellax/rellax.min.js
 //@prepros-prepend ../../node_modules/counterup/jquery.counterup.min.js
 
-window.addEventListener('load',function() {
+window.addEventListener('load',function(){
 
     $('nav').coreNavigation({
-      menuPosition: "left",
-      container: true,
+      container: true,  
       responsideSlide: true
     });
 
@@ -25,5 +24,26 @@ window.addEventListener('load',function() {
       time: 1000
     });
 
+    var url = location.pathname;
+    if ("url:contains('index.php')") {
+      $('.logo-n').addClass('hidden');
+      $('.logo-b').removeClass('hidden');
+      $('.core-nav a').css('color', '#fff');
+      $(".core-nav a").hover(
+        function() {
+          $(this).css("color","#5a0586");
+        }, function() {
+          $(this).css("color","#fff");
+        }
+      );
+      $('.core-nav .fab').css('color', '#fff');
+      $(".core-nav .fab").hover(
+        function() {
+          $(this).css("color","#5a0586");
+        }, function() {
+          $(this).css("color","#fff");
+        }
+      );
+    }
 
 });
