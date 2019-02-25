@@ -1,10 +1,9 @@
 //@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../../node_modules/corenav/coreNavigation.js
 //@prepros-prepend ../../node_modules/rellax/rellax.min.js
-//@prepros-prepend ../../node_modules/counterup/jquery.counterup.min.js
+//@prepros-prepend ../../node_modules/jquery.panzoom/dist/jquery.panzoom.min.js
 
 window.addEventListener('load',function(){
-
 
     $('nav').coreNavigation({
       container: true,
@@ -18,11 +17,6 @@ window.addEventListener('load',function(){
       round: true,
       vertical: true,
       horizontal: false
-    });
-
-    $('.counter').counterUp({
-      delay: 10,
-      time: 1000
     });
 
     var url = location.pathname;
@@ -45,9 +39,14 @@ window.addEventListener('load',function(){
           $(this).css("color","#fff");
         }
       );
+
+
     }
 
 
-
+    $("#Calque_2").panzoom({
+      minScale: 0,
+      $zoomRange: $("input[type='range']")
+    });
 
 });

@@ -7,6 +7,8 @@ $description = "Page de ".$title." de becycle";
 
 <div class="abt" id="france">
   <h2>Le vélo dans le monde</h2>
-  <?php echo file_get_contents("img/world.svg"); ?>
+  <div class="panzoom">
+    <?php echo file_get_contents("img/world.svg"); ?>
+  </div>
 </div>
 <?php include_once('_inc/footer.php')  ?>
