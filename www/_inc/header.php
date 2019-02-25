@@ -1,12 +1,13 @@
 <?php include_once('_inc/config.php')  ?>
 
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta charset="utf-8">
 		<title><?php echo $title; ?></title>
 		<meta name="description" content="<?php echo $description; ?>">
+		<link rel="shortcut icon" href="img/favicon.png">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
 	</head>

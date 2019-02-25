@@ -6,5 +6,5 @@ if(!isset($title)){
 	$title = "Becycle | Accueil";
 }
 if(!isset($description)) {
-	$description = "Description du site par défaut";
+	$description = "Becycle est une application déstinée aux éco-cyclistes responsables et proposant des itininéraires et conseils. Faites le point sur votre impact écologique.";
 }

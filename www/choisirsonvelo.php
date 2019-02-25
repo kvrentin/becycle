@@ -1,7 +1,6 @@
 <?php
 $current = "choix";
 $title = "Becycle | Sécurité | Bien choisir son vélo";
-$description = "Page de ".$title." de becycle";
 ?>
 <?php include_once('_inc/header.php');  ?>
 

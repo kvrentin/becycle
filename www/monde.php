@@ -1,7 +1,6 @@
 <?php
 $current = "monde";
 $title = "Becycle | Le vélo dans le monde";
-$description = "Page de ".$title." de becycle";
 ?>
 <?php include_once('_inc/header.php');  ?>
 
