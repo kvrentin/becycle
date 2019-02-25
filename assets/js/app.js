@@ -23,29 +23,25 @@ window.addEventListener('load',function(){
     if ("url:contains('index.php')") {
       $('.logo-n').addClass('hidden');
       $('.logo-b').removeClass('hidden');
-      $('.core-nav a').css('color', '#fff');
+      $('.core-nav a').css('color', 'rgba(255,255,255,0.7)');
       $(".core-nav a").hover(
         function() {
-          $(this).css("color","#5a0586");
-        }, function() {
           $(this).css("color","#fff");
+        }, function() {
+          $(this).css("color","rgba(255,255,255,0.7)");
         }
       );
-      $('.core-nav .fab').css('color', '#fff');
+      $('.core-nav .fab').css('color', 'rgba(255,255,255,0.7)');
       $(".core-nav .fab").hover(
         function() {
-          $(this).css("color","#5a0586");
-        }, function() {
           $(this).css("color","#fff");
+        }, function() {
+          $(this).css("color","rgba(255,255,255,0.7)");
         }
       );
     }
 
-    svgPanZoom('#map', {
-          zoomEnabled: true,
-          controlIconsEnabled: true
-        });
-
+    
 
 
 });
