@@ -2,7 +2,7 @@
       <div id="home">
         <div id="home-content">
           <h1>Becycle</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu facilisis lorem. Proin sit amet odio sagittis, luctus nulla eu, ultricies justo. Aliquam tristique molestie neque, non congue mi facilisis quis. Suspendisse ut malesuada arcu. Proin tempus mauris in arcu finibus, id mollis risus efficitur. Aliquam euismod ullamcorper elementum.</p>
+          <p>Pour les éco-cyclistes responsables.</p>
           <p><a id="appstore" href="#"><img src="img/appstore.svg"></a><a href="#"><img src="img/playstore.png"></a></p>
         </div>
       </div>
@@ -16,13 +16,13 @@
           </div>
           <div class="mockup">
             <img src="img/blob1.svg">
-            <img class="rellax" src="img/mockup.png" style="width:300px;">
+            <img class="rellax" src="img/mockup.png">
           </div>
         </div>
         <div class="fct">
           <div class="mockup">
             <img src="img/blob2.svg">
-            <img class="rellax" src="img/mockup.png" style="width:300px;">
+            <img class="rellax" src="img/mockup.png">
           </div>
           <div>
             <span class="number">2</span>
@@ -38,7 +38,7 @@
           </div>
           <div class="mockup">
             <img src="img/blob3.svg">
-            <img class="rellax" src="img/mockup.png" style="width:300px;">
+            <img class="rellax" src="img/mockup.png">
           </div>
         </div>
       </div>
