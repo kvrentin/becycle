@@ -54,7 +54,7 @@ $title = "Becycle | Décrets";
         </div>
         <div class="info">
           <h2>Loi mobilités : l’ensemble des mesures du plan vélo confirmé</h2>
-          <p class="resume">Le Gouvernement vient de présenter sa loi d’orientation des mobilités, à cette occasion un guide est rédiger pour accompagner l’ensemble des acteurs concernés, avec un but simple : faciliter la co-construction du « système vélo ».</p>
+          <p class="resume">Le Gouvernement vient de présenter sa loi d’orientation des mobilités, à cette occasion un guide est rédiger pour accompagner l’ensemble des acteurs concernés.</p>
           <p class="suite"><a href="#">Lire la suite</a></p>
           <div class="footer-info">
             <p>Par Lucie D.</p>
