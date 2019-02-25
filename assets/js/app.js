@@ -5,8 +5,9 @@
 
 window.addEventListener('load',function(){
 
+
     $('nav').coreNavigation({
-      container: true,  
+      container: true,
       responsideSlide: true
     });
 
@@ -45,5 +46,8 @@ window.addEventListener('load',function(){
         }
       );
     }
+
+
+
 
 });
