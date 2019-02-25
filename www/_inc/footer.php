@@ -22,11 +22,11 @@
 							<li><a href="<?php echo $route['choix']; ?>">Bien choisir son vélo</a></li>
 						</ul>
 					</li>
-					<li class="list list-abt"><a href="<?php echo $route['about']; ?>"><img src="img/logob.png"></a>
+					<li class="list list-abt"><a href="<?php echo $route['home']; ?>"><img src="img/logob.png"></a>
 						<ul class="sublist">
-							<li><a href="<?php echo $route['home']; ?>">L'application</a></li>
-							<li><a href="<?php echo $route['about']; ?>#join">Nous rejoindre</a></li>
-							<li><a href="<?php echo $route['contact']; ?>">Contact</a></li>
+							<li><a href="<?php echo $route['about']; ?>#about">A propos de nous</a></li>
+							<li><a href="<?php echo $route['about']; ?>#service">Le service</a></li>
+							<li><a href="<?php echo $route['about']; ?>#help">Et si on aidait la planète ?</a></li>
 						</ul>
 					</li>
 				</ul>

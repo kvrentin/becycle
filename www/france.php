@@ -1,11 +1,11 @@
 <?php
 $current = "france";
-$title = "Le vélo en france";
+$title = "Becycle | Le vélo en France";
 $description = "Page de ".$title." de becycle";
 ?>
 <?php include_once('_inc/header.php');  ?>
 <div class="abt" id="france">
-  <h2>Le vélo en France</h2>
+  <h1>Le vélo en France</h1>
   <img src="img/france.svg">
   <p>La part de français qui se déplacent en vélo pour se rendre au travail (en %).</p>
   <ul>

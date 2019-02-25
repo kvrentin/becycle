@@ -1,7 +1,7 @@
 //@prepros-prepend ../../node_modules/jquery/dist/jquery.min.js
 //@prepros-prepend ../../node_modules/corenav/coreNavigation.js
 //@prepros-prepend ../../node_modules/rellax/rellax.min.js
-//@prepros-prepend ../../node_modules/jquery.panzoom/dist/jquery.panzoom.min.js
+//@prepros-prepend ../../node_modules/svg-pan-zoom/dist/svg-pan-zoom.min.js
 
 window.addEventListener('load',function(){
 
@@ -39,14 +39,13 @@ window.addEventListener('load',function(){
           $(this).css("color","#fff");
         }
       );
-
-
     }
 
+    svgPanZoom('#map', {
+          zoomEnabled: true,
+          controlIconsEnabled: true
+        });
 
-    $("#Calque_2").panzoom({
-      minScale: 0,
-      $zoomRange: $("input[type='range']")
-    });
+
 
 });
